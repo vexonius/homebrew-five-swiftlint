@@ -7,9 +7,6 @@ class FiveSwiftlint < Formula
     head "https://github.com/vexonius/SwiftLint", branch: "feature/custom-rules"
     version "1.0.0"
   
-    depends_on xcode: ["13.3", :build]  
-    uses_from_macos "swift"
-  
     def install
         bin.install "five-swiftlint"
     end
